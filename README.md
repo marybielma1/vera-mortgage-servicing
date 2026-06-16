@@ -1,2 +1,63 @@
-# vera-mortgage-servicing
-VERA — AI validation platform for mortgage servicing. Catches loan errors before they reach the borrower.
+# VERA — The Validation Layer for Mortgage Servicing
+
+**Catch every error before it reaches the borrower — in seconds, around the clock.**
+
+VERA is an AI validation platform for mortgage servicing transfers. It performs the exception-based checking that operations teams do by hand — comparing loan data against source documents — but in seconds, with every check explainable and logged for audit.
+
+Built by a frontline servicing operations professional, not an engineering team. VERA exists because most operational problems don't need more people — they need smarter workflows.
+
+---
+
+## Two Engines, One Platform
+
+### 🛡️ VERA Validate — *Exception Detection & Pre-Boarding QC*
+Checks every loan against its source documents **before** it boards.
+- Reads real document formats (investor approval letters, underwriting worksheets)
+- Compares boarded terms against the source of truth, field by field
+- Flags every mismatch with an audit-ready comment and dollar variance
+- **7 seconds per loan** vs. ~15 minutes manual · **100% accuracy** across 100+ tested loans
+
+### ⚙️ VERA Build — *Automated Repayment Plan Boarding*
+Turns messy prior-servicer transfer data into clean, boardable repayment plans.
+- Reads dense, fixed-width transfer reports (S2MR-style)
+- Extracts plan terms, payment schedules, and frequency counts
+- Validates the math and flags judgment items for human review
+- **120 hours of manual boarding → minutes**, with zero errors across tested plans
+
+---
+
+## Why It Matters to a Servicer
+
+| Scale | 24/7 | Protect |
+|---|---|---|
+| More volume without more headcount | No breaks, no sick days, no missed rules | Errors caught before borrowers feel them |
+
+Bad transfer data becomes misapplied payments, wrong plan terms, escalations, and compliance exposure. VERA catches it upstream — before any of that reaches the borrower.
+
+---
+
+## How It Works (Demo)
+
+VERA runs on enterprise AI (originally Microsoft Copilot, in production). The logic is a structured prompt framework grounded in six years of servicing operations experience: source-of-truth hierarchy, field-level validation rules, exception handling, and audit logging.
+
+### VERA Validate — demonstration sequence
+1. **Clean loan → CLEAR TO BOARD** (proves no false alarms)
+2. **Real documents, terms match → CLEAR** (reads a prose investor letter + a table-format worksheet, and understands that "three and seven-eighths percent" = "3.875%")
+3. **Real documents, planted errors → HOLD** (catches transposed rates, wrong dates, and balance errors — and calculates the exact dollar variance on each)
+
+### VERA Build — demonstration
+Reads a multi-loan transfer report and extracts a clean, board-ready repayment plan for any loan: balance, total, payment count, full schedule — plus flagged items for review.
+
+*(Screenshots in `/screenshots`. Sample synthetic documents in `/demo-documents`.)*
+
+---
+
+## About the Builder
+
+Mary Bielma — mortgage servicing operations professional with 6+ years across servicing transfers, loan boarding, loss mitigation, bankruptcy, and compliance. MIT Sloan Executive Education: *AI: Implications for Business Strategy* (Certificate) and *Machine Learning in Business* (in progress).
+
+VERA is the product of understanding mortgage servicing deeply enough to translate operational failures into AI-assisted controls.
+
+---
+
+> **Note on data:** Every document and example in this repository is **fully synthetic**. No proprietary, borrower, or company information is included. All servicer names, loan numbers, balances, and dates are fictitious and created solely for demonstration.
