@@ -6,6 +6,10 @@ VERA is an AI validation platform for mortgage servicing transfers. It performs 
 
 Built by a frontline servicing operations professional, not an engineering team. VERA exists because most operational problems don't need more people — they need smarter workflows.
 
+> 📸 **See it in action:** the screenshot below shows VERA Validate catching four data-entry errors on a real-format loan modification — including the exact dollar variance on each — and correctly placing the loan on HOLD before it could board.
+
+![VERA Validate catching errors](vera-validate-hold.png)
+
 ---
 
 ## Two Engines, One Platform
@@ -40,6 +44,8 @@ Bad transfer data becomes misapplied payments, wrong plan terms, escalations, an
 
 VERA runs on enterprise AI (originally Microsoft Copilot, in production). The logic is a structured prompt framework grounded in six years of servicing operations experience: source-of-truth hierarchy, field-level validation rules, exception handling, and audit logging.
 
+Full demo write-ups: [VERA Validate](VERA_Validate_Demo.md) · [VERA Build](VERA_Build_Demo.md)
+
 ### VERA Validate — demonstration sequence
 1. **Clean loan → CLEAR TO BOARD** (proves no false alarms)
 2. **Real documents, terms match → CLEAR** (reads a prose investor letter + a table-format worksheet, and understands that "three and seven-eighths percent" = "3.875%")
@@ -48,7 +54,7 @@ VERA runs on enterprise AI (originally Microsoft Copilot, in production). The lo
 ### VERA Build — demonstration
 Reads a multi-loan transfer report and extracts a clean, board-ready repayment plan for any loan: balance, total, payment count, full schedule — plus flagged items for review.
 
-*(Screenshots in `/screenshots`. Sample synthetic documents in `/demo-documents`.)*
+*(Demo screenshots and synthetic sample documents are included in this repository.)*
 
 ---
 
@@ -57,6 +63,16 @@ Reads a multi-loan transfer report and extracts a clean, board-ready repayment p
 Mary Bielma — mortgage servicing operations professional with 6+ years across servicing transfers, loan boarding, loss mitigation, bankruptcy, and compliance. MIT Sloan Executive Education: *AI: Implications for Business Strategy* (Certificate) and *Machine Learning in Business* (in progress).
 
 VERA is the product of understanding mortgage servicing deeply enough to translate operational failures into AI-assisted controls.
+
+---
+
+## What's Next
+
+VERA is an actively evolving platform. Planned next steps:
+- **Expand validation coverage** to additional workout types (forbearance, partial claims, USDA/VA modifications)
+- **Excel-native engine** — most servicing operations run on spreadsheets; a version that reads and validates tracker workbooks directly
+- **Confidence scoring** on each flagged exception to help teams triage review queues
+- **Batch processing** to validate an entire transfer file in one pass with a summary exception report
 
 ---
 
