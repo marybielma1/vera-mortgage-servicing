@@ -19,14 +19,14 @@ Checks every loan against its source documents **before** it boards.
 - Reads real document formats (investor approval letters, underwriting worksheets)
 - Compares boarded terms against the source of truth, field by field
 - Flags every mismatch with an audit-ready comment and dollar variance
-- **7 seconds per loan** vs. ~15 minutes manual · **100% accuracy** across 100+ tested loans
+- **7 seconds per loan** vs. ~15 minutes manual · **100% accuracy** across 100+ synthetic test loans
 
 ### ⚙️ VERA Build — *Automated Repayment Plan Boarding*
 Turns messy prior-servicer transfer data into clean, boardable repayment plans.
 - Reads dense, fixed-width transfer reports (S2MR-style)
 - Extracts plan terms, payment schedules, and frequency counts
 - Validates the math and flags judgment items for human review
-- **120 hours of manual boarding → minutes**, with zero errors across tested plans
+- **120 hours of manual boarding → minutes**, with zero errors across synthetic test plans
 
 ---
 
@@ -42,7 +42,7 @@ Bad transfer data becomes misapplied payments, wrong plan terms, escalations, an
 
 ## How It Works (Demo)
 
-VERA runs on enterprise AI (originally Microsoft Copilot, in production). The logic is a structured prompt framework grounded in six years of servicing operations experience: source-of-truth hierarchy, field-level validation rules, exception handling, and audit logging.
+VERA was prototyped using enterprise AI tooling (Microsoft Copilot) and a structured prompt framework grounded in six years of servicing operations experience: source-of-truth hierarchy, field-level validation rules, exception handling, and audit logging.
 
 Full demo write-ups: [VERA Validate](VERA_Validate_Demo.md) · [VERA Build](VERA_Build_Demo.md)
 
